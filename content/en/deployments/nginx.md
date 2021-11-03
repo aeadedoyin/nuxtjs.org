@@ -133,7 +133,7 @@ server {
 Change `YOUR_WEBSITE_FOLDER` to your website folder and `YOUR_WEBSITE_DOMAIN` to your website URL. Laravel Forge will have filled out these values for you but be sure to double check.
 
 ```nginx
-# FORGE CONFIG (DOT NOT REMOVE!)
+# FORGE CONFIG (DO NOT REMOVE!)
 include forge-conf/YOUR_WEBSITE_FOLDER/before/*;
 
 map $sent_http_content_type $expires {
@@ -157,7 +157,7 @@ server {
     gzip_types      text/plain application/xml text/css application/javascript;
     gzip_min_length 1000;
 
-    # FORGE CONFIG (DOT NOT REMOVE!)
+    # FORGE CONFIG (DO NOT REMOVE!)
     include forge-conf/YOUR_WEBSITE_FOLDER/server/*;
 
     location / {
@@ -181,7 +181,7 @@ server {
     }
 }
 
-# FORGE CONFIG (DOT NOT REMOVE!)
+# FORGE CONFIG (DO NOT REMOVE!)
 include forge-conf/YOUR_WEBSITE_FOLDER/after/*;
 ```
 
@@ -190,7 +190,7 @@ include forge-conf/YOUR_WEBSITE_FOLDER/after/*;
 It's best to let Laravel Forge do the editing of the `nginx.conf` for you, by clicking on Sites -> YOUR_WEBSITE_DOMAIN (SERVER_NAME) and then click on SSL and install a certificate from one of the providers. Remember to activate the certificate. Your `nginx.conf` should now look something like this:
 
 ```nginx
-# FORGE CONFIG (DOT NOT REMOVE!)
+# FORGE CONFIG (DO NOT REMOVE!)
 include forge-conf/YOUR_WEBSITE_FOLDER/before/*;
 
 map $sent_http_content_type $expires {
@@ -223,7 +223,7 @@ server {
     gzip_types      text/plain application/xml text/css application/javascript;
     gzip_min_length 1000;
 
-    # FORGE CONFIG (DOT NOT REMOVE!)
+    # FORGE CONFIG (DO NOT REMOVE!)
     include forge-conf/YOUR_WEBSITE_FOLDER/server/*;
 
     location / {
@@ -247,6 +247,6 @@ server {
     }
 }
 
-# FORGE CONFIG (DOT NOT REMOVE!)
+# FORGE CONFIG (DO NOT REMOVE!)
 include forge-conf/YOUR_WEBSITE_FOLDER/after/*;
 ```
